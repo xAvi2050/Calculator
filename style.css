@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaeff3;
+}
+
+.container {
+    width: 320px;
+    height: 500px;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    height: 90px;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.display input {
+    border: 0px;
+    background-color: #2b2b2b;
+    height: 40px;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: right;
+    outline: none;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(5);
+    grid-gap: 10px;
+}
+
+.key {
+    width: 70px;
+    height: 70px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#AC-button,
+#divide-button,
+#multiply-button,
+#delete-button,
+#subtraction-button,
+#addition-button,
+#percentage-button {
+    background: linear-gradient(145deg, #f0b42e, #d9a527);
+    color: black;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), -4px -4px 8px rgba(60, 60, 60, 0.2);
+}
+
+.number {
+    background: linear-gradient(145deg, #2b2b2b, #1a1a1a);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), -4px -4px 8px rgba(60, 60, 60, 0.2);
+}
+
+#equal-button {
+    background: linear-gradient(145deg, #f9a825, #d18a1d);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-column: 4;
+    grid-row: span 2;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), -4px -4px 8px rgba(60, 60, 60, 0.2);
+}
+
+#num-00 {
+    grid-column: 1;
+    grid-column: span 3;
+    width:100%;
+    border-radius: 20px;
+}
+
+.key:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.7), inset -2px -2px 4px rgba(60, 60, 60, 0.2);
+}
+

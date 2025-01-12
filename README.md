@@ -1,0 +1,1 @@
+A basic calculator with a user-friendly interface that performs essential arithmetic operations, including addition, subtraction, multiplication, and division. It has realistic and interactive button that enhance the user experience.
