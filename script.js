@@ -21,6 +21,10 @@
 
 const display = document.getElementById("display-value");
 
+if (display.value.length === 1) {
+    display.value = "0";  // If there's only one character, reset to "0"
+}
+
 function appendToDisplay(input) {
     // Avoid appending multiple leading zeros
     if (display.value === "0" && input === "0") return;
@@ -40,9 +44,7 @@ function clearDisplay() {
 
 function deleteElements() {
     // Remove the last character from the display
-    if (display.value.length === 1) {
-        display.value = "0";  // If there's only one character, reset to "0"
-    } else {
+    if (display.value.length > 0) {
         display.value = display.value.slice(0, -1);
     }
 }
