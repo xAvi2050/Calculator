@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <div class="container">
-        <div class="display">
-            <input placeholder="0" id="display-value" readonly>
+    <body>
+        <div class="container">
+            <div class="display">
+                <input placeholder="0" id="display-value" readonly>
+            </div>
+            <div class="keys">
+                <button id="AC-button" class="key" onclick="clearDisplay()">AC</button>
+                <button id="divide-button" class="key" onclick="appendToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+                <button id="multiply-button" class="key" onclick="appendToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+                <button id="delete-button" class="key" onclick="deleteElements()"><i class="fa-solid fa-delete-left"></i></button>
+                
+                <button id="num-07" class="key number" onclick="appendToDisplay('7')">7</button>
+                <button id="num-08" class="key number" onclick="appendToDisplay('8')">8</button>
+                <button id="num-09" class="key number" onclick="appendToDisplay('9')">9</button>
+                <button id="subtraction-button" class="key" onclick="appendToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+                
+                <button id="num-04" class="key number" onclick="appendToDisplay('4')">4</button>
+                <button id="num-05" class="key number" onclick="appendToDisplay('5')">5</button>
+                <button id="num-06" class="key number" onclick="appendToDisplay('6')">6</button>
+                <button id="addition-button" class="key" onclick="appendToDisplay('+')"><i class="fa-solid fa-plus"></i></button>
+                
+                <button id="num-01" class="key number" onclick="appendToDisplay('1')">1</button>
+                <button id="num-02" class="key number" onclick="appendToDisplay('2')">2</button>
+                <button id="num-03" class="key number" onclick="appendToDisplay('3')">3</button>
+                <button id="equal-button" class="key equal" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+                <button id="num-00" class="key number" onclick="appendToDisplay('0')">0</button>
+            </div>
         </div>
-        <div class="keys">
-            <button id="AC-button" class="key" onclick="clearDisplay()">AC</button>
-            <button id="divide-button" class="key" onclick="appendToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
-            <button id="multiply-button" class="key" onclick="appendToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
-            <button id="delete-button" class="key" onclick="deleteElements()"><i class="fa-solid fa-delete-left"></i></button>
-            
-            <button id="num-07" class="key number" onclick="appendToDisplay('7')">7</button>
-            <button id="num-08" class="key number" onclick="appendToDisplay('8')">8</button>
-            <button id="num-09" class="key number" onclick="appendToDisplay('9')">9</button>
-            <button id="subtraction-button" class="key" onclick="appendToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
-            
-            <button id="num-04" class="key number" onclick="appendToDisplay('4')">4</button>
-            <button id="num-05" class="key number" onclick="appendToDisplay('5')">5</button>
-            <button id="num-06" class="key number" onclick="appendToDisplay('6')">6</button>
-            <button id="addition-button" class="key" onclick="appendToDisplay('+')"><i class="fa-solid fa-plus"></i></button>
-            
-            <button id="num-01" class="key number" onclick="appendToDisplay('1')">1</button>
-            <button id="num-02" class="key number" onclick="appendToDisplay('2')">2</button>
-            <button id="num-03" class="key number" onclick="appendToDisplay('3')">3</button>
-            <button id="equal-button" class="key equal" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
-            <button id="num-00" class="key number" onclick="appendToDisplay('0')">0</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body> 
+        <script src="script.js"></script>
+    </body> 
 </html>
